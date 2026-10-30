@@ -50,9 +50,9 @@ Each category contains an `img/` folder for input images and an `lb/` folder for
 
 ## 3. Testing
 
-Download the pretrained weights used in our paper:
+Download the weights used in our paper:
 
-[[Pretrained Weights]](WEIGHTS_URL)
+[[Weights]](https://huggingface.co/jiunfeng845bd/GCATransformer/resolve/main/GCATransformer_tcsvt2026.sav)
 
 Run evaluation using:
 
