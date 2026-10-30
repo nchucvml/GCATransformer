@@ -16,6 +16,9 @@ If you find this work useful, please consider citing our paper:
   title   = {Group Co-attention Transformer for Image Co-segmentation},
   journal = {IEEE Transactions on Circuits and Systems for Video Technology},
   year    = {2026},
+  volume={36},
+  number={11},
+  pages={17628-17640},
   doi     = {10.1109/TCSVT.2026.3722576}
 }
 ```
