@@ -4,7 +4,69 @@ Official implementation of **Group Co-attention Transformer for Image Co-segment
 
 [[Paper]](https://ieeexplore.ieee.org/document/11649503)
 
-> The code will be made publicly available soon.
+## 1. Installation
+
+Clone the repository and create the Conda environment:
+
+```bash
+git clone https://github.com/<username>/GCATransformer.git
+cd GCATransformer
+
+conda env create -f environment.yml
+conda activate <env_name>
+```
+
+## 2. Dataset Preparation
+
+Download the datasets and organize them under the `data/` directory as follows:
+
+```text
+data/
+├── Internet/
+│   └── test/
+│       └── Car/
+│           ├── img/
+│           │   └── 0002.png
+│           └── lb/
+│               └── 0002.png
+├── MSRC/
+│   └── test/
+│       └── bird/
+│           ├── img/
+│           └── lb/
+├── PASCAL/
+│   └── test/
+│       └── bicycle/
+│           ├── img/
+│           └── lb/
+└── iCoSeg/
+    └── test/
+        └── bear2/
+            ├── img/
+            └── lb/
+```
+
+Each category contains an `img/` folder for input images and an `lb/` folder for the corresponding ground-truth masks.
+
+## 3. Testing
+
+Download the pretrained weights used in our paper:
+
+[[Pretrained Weights]](WEIGHTS_URL)
+
+Run evaluation using:
+
+```bash
+python test.py --weights <path_to_weights>
+```
+
+## 4. Training
+
+To train GCATransformer from scratch, run:
+
+```bash
+python train.py
+```
 
 ## Citation
 
